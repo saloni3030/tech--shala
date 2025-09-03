@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Shala</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Empowering Your Future with Technology</h1>
+      <p>Join our Tech Shala and start learning with beginner-friendly courses in Computer Basics, Internet Skills, Data Fundamentals, and more.</p>
+      <button onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})">Enroll Now</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <h2>About Our Tech Shala</h2>
+      <p>Our Tech Shala bridges the gap between academic knowledge and real-world technology skills. Hands-on training, expert mentorship, and career support will help you become job-ready.</p>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="courses">
+    <div class="container">
+      <h2>Basic Courses We Offer</h2>
+      <div id="courseContainer" class="grid"></div>
+    </div>
+  </section>
+
+  <!-- Hidden Enroll Form -->
+<div id="enrollForm" style="display:none; padding: 40px; background:#f0f8ff; border-radius:10px; max-width:500px; margin:20px auto;">
+  <h3>Enroll in Course</h3>
+  <form id="enrollFormForm" action="https://formspree.io/f/movnnyrr" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="course" id="courseName" readonly>
+    <button type="submit">Submit Enrollment</button>
+    <button type="button" onclick="document.getElementById('enrollForm').style.display='none'">Cancel</button>
+  </form>
+</div>
+
+  <!-- Resources Section -->
+  <section class="resources">
+    <div class="container">
+      <h2>Learning Resources</h2>
+      <div id="resourcesContainer" class="grid"></div>
+    </div>
+  </section>
+
+  <!-- Survey Gallery Section -->
+  <section class="survey-gallery">
+    <div class="container">
+      <h2>Student Survey Highlights</h2>
+      <div id="surveyContainer" class="grid"></div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Students Say</h2>
+      <div id="testimonialsContainer" class="grid"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contactForm" action="https://formspree.io/f/xqaddyjz" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+<!-- Feedback Section -->
+<section id="feedbackSection" class="contact">
+  <div class="container">
+    <h2>Give Your Feedback</h2>
+    <form id="feedbackForm" action="https://formspree.io/f/xqaddyjz" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Feedback" required></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Tech-Shala. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
